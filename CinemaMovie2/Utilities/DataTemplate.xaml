@@ -1,0 +1,31 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:vm="clr-namespace:CinemaMovie2.ViewModel"
+                    xmlns:view="clr-namespace:CinemaMovie2.View">
+
+    <DataTemplate DataType="{x:Type vm:HomeVM}">
+        <view:Home/>
+    </DataTemplate>
+ 
+    <DataTemplate DataType="{x:Type vm:MoviesVM}">
+        <view:Movies/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:MyFavoritesVM}">
+        <view:MyFavorites/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:PaymentVM}">
+        <view:Payment/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:SettingVM}">
+        <view:Setting/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:TvShowVM}">
+        <view:TvShows/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:HistoryVM}">
+        <view:History/>
+    </DataTemplate>
+    
+
+    
+</ResourceDictionary>

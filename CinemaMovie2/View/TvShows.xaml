@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="CinemaMovie2.View.TvShows"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:vm="clr-namespace:CinemaMovie2.ViewModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="622"
+             Style="{StaticResource Page_Style}">
+    <UserControl.DataContext>
+        <vm:TvShowVM/>
+    </UserControl.DataContext>
+    <Grid>
+        <Border CornerRadius="0,20,20,0">
+            <Border.Background>
+                <ImageBrush ImageSource="E:\random projek\CinemaMovie2\CinemaMovie2\Image\th.jpg"
+                            Stretch="UniformToFill"/>
+            </Border.Background>
+        </Border>
+        <TextBlock Text="Number Tv Channel : "
+                   Foreground="#dbdbdb"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   FontFamily="E:\random projek\CinemaMovie2\CinemaMovie2\Font\OpenSans-Regular.ttf"
+                   Margin="80,154,0,0"/>
+        <TextBlock Text="{Binding TvId}"
+                   Foreground="#ced565"
+                   FontSize="12"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   FontFamily="E:\random projek\CinemaMovie2\CinemaMovie2\Font\OpenSans-Regular.ttf"
+                   Margin="200,154,0,0"/>
+
+    </Grid>
+</UserControl>
