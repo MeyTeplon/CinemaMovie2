@@ -3,7 +3,7 @@
     <Style  x:Key="Text_Style"
             TargetType="TextBlock">
         <Setter Property="FontFamily"
-                Value="/Font/#OpenSans-Regular"/>
+                Value="E:\random projek\CinemaMovie2\CinemaMovie2\Font\OpenSans-Regular.ttf"/>
         <Setter Property="VerticalAlignment"
                 Value="Center"/>
         <Setter Property="HorizontalAlignment"

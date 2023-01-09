@@ -9,8 +9,18 @@
       d:DesignHeight="600" d:DesignWidth="622"
       Title="History"
       Style="{StaticResource Page_Style}">
+    
+    <Page.DataContext>
+        <vm:HistoryVM/>
+    </Page.DataContext>
 
     <Grid>
+        <Border CornerRadius="0,20,20,0">
+            <Border.Background>
+                <ImageBrush ImageSource="\Image\ph_user-fill.png"
+                            Stretch="None"/>
+            </Border.Background>
+        </Border>
         
     </Grid>
 </Page>
